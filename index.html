@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>BinaryPage Solutions</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" type="image/png" href="images/BinaryPage Nav Logo.png"/>
-  </head>
-  <body>
+</head>
+<body>
+
+<div id="particles-js">
     <div class="container">
-      <div class="header">
-          <img src="images/BinaryPage Nav Logo.png" alt="Binarypage solutions logo">
-        <h1>BinaryPage Solutions</h1>
-        <h3>We are still under construction</h3>
-      </div>
-      <div class="contact">
-        <p><i class="fas fa-envelope-open-text"></i> E-mail</p>
-        <a href="mailto:web.binarypage@gmail.com">web.binarypage@gmail.com</a>
-        <p><i class="fab fa-whatsapp-square"></i> Phone</p>
-        <a href="tel:+94716969204">071-6969204</a>
-      </div>
+        <div class="header">
+            <img src="images/BinaryPage Nav Logo.png" alt="Binarypage solutions logo">
+            <h1>BinaryPage Solutions</h1>
+            <h3>We are still under construction</h3>
+        </div>
+        <div class="contact">
+            <p><i class="fas fa-envelope-open-text"></i> E-mail</p>
+            <a href="mailto:web.binarypage@gmail.com">web.binarypage@gmail.com</a>
+            <p><i class="fab fa-whatsapp-square"></i> Phone</p>
+            <a href="tel:+94716969204">071-6969204</a>
+        </div>
     </div>
-  </body>
+</div>
+
+<!--loading element-->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+
+<script src="./js/particles.js"></script>
+<script src="./js/app.js"></script>
+</body>
 </html>
